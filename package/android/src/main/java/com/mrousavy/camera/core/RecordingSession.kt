@@ -71,7 +71,7 @@ class RecordingSession(
       recorder.setAudioChannels(AUDIO_CHANNELS)
     }
     recorder.setInputSurface(surface)
-    // recorder.setOrientationHint(orientation.toDegrees())
+    recorder.setOrientationHint(270)
 
     recorder.setOnErrorListener { _, what, extra ->
       Log.e(TAG, "MediaRecorder Error: $what ($extra)")
